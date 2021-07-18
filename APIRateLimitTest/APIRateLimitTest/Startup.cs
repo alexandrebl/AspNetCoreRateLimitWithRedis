@@ -79,7 +79,7 @@ namespace APIRateLimitTest
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "APIRateLimitTest v1"));
             }
             
-            app.UseIpRateLimiting();
+            app.UseIpRateLimiting();    // Ativa o uso do Middleware de RateLimit
 
             app.UseRouting();
             app.UseAuthorization();
