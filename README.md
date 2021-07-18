@@ -2,7 +2,7 @@
 AspNet Core Rate Limit with Redis
 
 
-``cs
+```cs
 using System;
 using System.Collections.Generic;
 using System.Linq;
