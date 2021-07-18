@@ -1,7 +1,14 @@
 # AspNetCoreRateLimitWithRedis
 AspNet Core Rate Limit with Redis
 
-### Trecho de código a ser adicionado na class Startup.cs seção ConfigureServices
+## Instalar NuGets
+
+```cs
+install-package AspNetCoreRateLimit
+install-package AspNetCoreRateLimit.Redis
+```
+
+## Trecho de código a ser adicionado na class Startup.cs seção ConfigureServices
 
 ```cs
 #region RateLimit
@@ -33,12 +40,13 @@ services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 #endregion
 ```
 
-### Trecho de código a ser adicionado na class Startup.cs seção Configure
+## Trecho de código a ser adicionado na class Startup.cs seção Configure
+
 ```cs
 app.UseIpRateLimiting();    // Ativa o uso do Middleware de RateLimit
 ```
 
-### Exemplo de arquivo Startup.cs completo
+## Exemplo de arquivo Startup.cs completo
 
 ```cs
 using System;
