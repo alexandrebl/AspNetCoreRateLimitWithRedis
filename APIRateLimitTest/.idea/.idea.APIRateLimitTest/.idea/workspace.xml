@@ -4,7 +4,12 @@
     <projectFile>APIRateLimitTest/APIRateLimitTest.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e67a5c-5b40-43ea-8c59-c1de47af3c37" name="Default Changelist" comment="" />
+    <list default="true" id="e8e67a5c-5b40-43ea-8c59-c1de47af3c37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.APIRateLimitTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.APIRateLimitTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIRateLimitTest/Controllers/StatusController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APIRateLimitTest/Controllers/StatusController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIRateLimitTest/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APIRateLimitTest/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIRateLimitTest/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/APIRateLimitTest/appsettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +18,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DEDDF6CE-C45B-45A7-B1ED-834FC9B5DC6F/14/RateLimitConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/78093965-591F-4335-A300-3D440C8A7F1C/2/StartupExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DEDDF6CE-C45B-45A7-B1ED-834FC9B5DC6F/1A/IpRateLimitOptions.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/APIRateLimitTest/Controllers/WeatherForecastController.cs" />
       <option value="$PROJECT_DIR$/APIRateLimitTest/Properties/launchSettings.json" />
+      <option value="$PROJECT_DIR$/APIRateLimitTest/appsettings.json" />
       <option value="$PROJECT_DIR$/APIRateLimitTest/Controllers/StatusController.cs" />
       <option value="$PROJECT_DIR$/APIRateLimitTest/Startup.cs" />
     </changedPaths>
@@ -28,7 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34950384" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -76,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626627038040</updated>
-      <workItem from="1626627040085" duration="2725000" />
+      <workItem from="1626627040085" duration="5385000" />
     </task>
     <servers />
   </component>
