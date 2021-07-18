@@ -1,6 +1,44 @@
 # AspNetCoreRateLimitWithRedis
 AspNet Core Rate Limit with Redis
 
+### Trecho de código a ser adicionado na class Startup.cs seção ConfigureServices
+
+```cs
+#region RateLimit
+
+services.Configure<IpRateLimitOptions>(options =>               // Defini o limite de cota por IP de Origem
+{
+    options.GeneralRules = new List<RateLimitRule>()            // Regra de limite de requisição
+    {
+        new()
+        {
+            Endpoint = ":/status",                              // Expressão regular para filtrar o recurso http a ser monitorado
+            Period = "1s",                                      // Período 1s = um segundo. Use m: minuto, h: hora e d: dia
+            Limit = 1,                                          // Total de requisições permitidas dentro do período
+            QuotaExceededResponse = new QuotaExceededResponse   //Padronizaçãop da resposta
+            {
+                Content = "Too Many Requests in 1s",            //Resposta
+                ContentType = "application/text",               // Tipo da resposta. Use application/json para retorno JSON
+                StatusCode = 429                                //Codigo Http de retorno de estado
+            },
+        }
+    };
+    options.EnableEndpointRateLimiting = true;                  // Ativa cota de limite para endpoint customizado
+    options.EnableRegexRuleMatching = true;                     // Habilita Regex
+});
+
+services.AddSingleton<IConnectionMultiplexer>(provider => ConnectionMultiplexer.Connect("127.0.0.1")); //Redis IP
+services.AddRedisRateLimiting();
+services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+#endregion
+```
+
+### Trecho de código a ser adicionado na class Startup.cs seção Configure
+```cs
+app.UseIpRateLimiting();    // Ativa o uso do Middleware de RateLimit
+```
+
+### Exemplo de arquivo Startup.cs completo
 
 ```cs
 using System;
