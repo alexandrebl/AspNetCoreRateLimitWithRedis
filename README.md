@@ -46,9 +46,8 @@ services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 app.UseIpRateLimiting();    // Ativa o uso do Middleware de RateLimit
 ```
 
-Para facilitar o entendimento segue abaixo arquivo Startup.cs completo com todas as modificações necessárias <br />
-
 ## Exemplo de arquivo Startup.cs completo
+Para facilitar o entendimento segue abaixo arquivo Startup.cs completo com todas as modificações necessárias
 
 ```cs
 using System;
