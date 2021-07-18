@@ -34,7 +34,8 @@ services.Configure<IpRateLimitOptions>(options =>               // Defini o limi
     options.EnableRegexRuleMatching = true;                     // Habilita Regex
 });
 
-services.AddSingleton<IConnectionMultiplexer>(provider => ConnectionMultiplexer.Connect("127.0.0.1")); //Redis IP
+//Redis IP - Connection String
+services.AddSingleton<IConnectionMultiplexer>(provider => ConnectionMultiplexer.Connect("127.0.0.1")); 
 services.AddRedisRateLimiting();
 services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
 #endregion
