@@ -46,14 +46,14 @@ namespace APIRateLimitTest
                 {
                     new()
                     {
-                        Endpoint = ":/status",
-                        Period = "1s",
-                        Limit = 1,
-                        QuotaExceededResponse = new QuotaExceededResponse
+                        Endpoint = ":/status",                              // Expressão regular para filtrar o recurso http a ser monitorado
+                        Period = "1s",                                      // Período 1s = um segundo. Use m: minuto, h: hora e d: dia
+                        Limit = 1,                                          // Total de requisições permitidas dentro do período
+                        QuotaExceededResponse = new QuotaExceededResponse   //Padronizaçãop da resposta
                         {
-                            Content = "Too Many Requests in 1s",
-                            ContentType = "application/text",
-                            StatusCode = 429
+                            Content = "Too Many Requests in 1s",            //Resposta
+                            ContentType = "application/text",               // Tipo da resposta. Use application/json para retorno JSON
+                            StatusCode = 429                                //Codigo Http de retorno de estado
                         },
                     }
                 };
