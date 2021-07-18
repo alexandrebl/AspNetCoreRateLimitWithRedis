@@ -40,9 +40,9 @@ namespace APIRateLimitTest
             
             #region RateLimit
 
-            services.Configure<IpRateLimitOptions>(options =>
+            services.Configure<IpRateLimitOptions>(options =>               // Defini o limite de cota por IP de Origem
             {
-                options.GeneralRules = new List<RateLimitRule>()
+                options.GeneralRules = new List<RateLimitRule>()            // Regra de limite de requisição
                 {
                     new()
                     {
@@ -57,8 +57,8 @@ namespace APIRateLimitTest
                         },
                     }
                 };
-                options.EnableEndpointRateLimiting = true;
-                options.EnableRegexRuleMatching = true;
+                options.EnableEndpointRateLimiting = true;                  // Ativa cota de limite para endpoint customizado
+                options.EnableRegexRuleMatching = true;                     // Habilita Regex
             });
             
             services.AddSingleton<IConnectionMultiplexer>(provider => ConnectionMultiplexer.Connect("127.0.0.1")); //Redis IP

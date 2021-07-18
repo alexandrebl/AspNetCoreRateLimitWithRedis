@@ -7,7 +7,6 @@
     <list default="true" id="e8e67a5c-5b40-43ea-8c59-c1de47af3c37" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.APIRateLimitTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.APIRateLimitTest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APIRateLimitTest/Controllers/StatusController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APIRateLimitTest/Controllers/StatusController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIRateLimitTest/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APIRateLimitTest/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APIRateLimitTest/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/APIRateLimitTest/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1626627038040</updated>
-      <workItem from="1626627040085" duration="5385000" />
+      <workItem from="1626627040085" duration="5717000" />
     </task>
     <servers />
   </component>
